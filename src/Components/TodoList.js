@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import TodoForm from './TodoForm';
 import Todo from './Todo';
+import sound from "./assets/reward.wav"
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
@@ -35,6 +36,9 @@ function TodoList() {
       if (todo.id === id) {
         todo.isComplete = !todo.isComplete;
       }
+      const reward = new Audio(sound);
+      reward.volume = .05
+      reward.play()
       return todo;
     });
     setTodos(updatedTodos);
