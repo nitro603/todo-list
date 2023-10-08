@@ -4,7 +4,6 @@ import { RiCloseCircleLine } from 'react-icons/ri';
 import { TiEdit } from 'react-icons/ti';
 import Check from './Check';
 
-
 const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
   const [edit, setEdit] = useState({
     id: null,
@@ -32,6 +31,9 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
   //to create priority coloring, we can add squares containing colors
   //we'll have to set a default color classname which will change when priority is clicked
   //tasks, 2. add priority labels 3. finish written document
+
+  //priority labels
+  //
   
   return todos.map((todo, index) => (
     <div

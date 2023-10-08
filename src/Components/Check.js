@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {BsCheckSquare, BsCheckSquareFill} from 'react-icons/bs'
 
 const Checked = (check) => {
